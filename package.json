@@ -1,0 +1,42 @@
+{
+  "name": "npm-all-routes-button",
+  "version": "1.0.10",
+  "description": "A customizable React button for navigating between multiple routes with animations",
+  "main": "dist/index.cjs.js",
+  "module": "dist/index.esm.js",
+  "files": [
+    "dist"
+  ],
+  "type": "module",
+  "scripts": {
+    "build": "rollup -c",
+    "prepare": "npm run build"
+  },
+  "keywords": [
+    "react",
+    "routes",
+    "all-routes",
+    "button",
+    "navigation",
+    "animation"
+  ],
+  "author": "Amina Khan",
+  "license": "ISC",
+  "dependencies": {
+    "prop-types": "^15.8.1",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "react-router-dom": "^6.28.1"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.21.0",
+    "@babel/core": "^7.26.0",
+    "@babel/preset-env": "^7.26.0",
+    "@babel/preset-react": "^7.26.3",
+    "@rollup/plugin-babel": "^5.3.0",
+    "@rollup/plugin-commonjs": "^21.0.2",
+    "@rollup/plugin-node-resolve": "^11.2.1",
+    "rollup": "^2.79.2",
+    "rollup-plugin-postcss": "^4.0.2"
+  }
+}

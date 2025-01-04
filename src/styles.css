@@ -1,0 +1,188 @@
+/* Button Styling */
+.all-routes-btn {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  z-index: 1000;
+  padding: 0.8rem 2rem;
+  font-size: 1.2rem;
+  color: #00e0ff;
+  background: transparent;
+  border: none;
+  text-shadow: 0 0 5px #00e0ff, 0 0 10px #00e0ff;
+  font-family: 'Roboto', sans-serif;
+  transition: all 0.3s ease-in-out;
+}
+
+.all-routes-btn:hover {
+  color: #072451;
+  background: #00e0ff;
+  box-shadow: 0 0 10px #00e0ff, 0 0 20px #00e0ff;
+  transform: scale(1.1);
+}
+
+/* Full-Screen Overlay */
+.all-routes-page {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(10, 25, 47, 0.98); /* Dark overlay */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.5s ease-in-out, visibility 0.5s ease-in-out;
+}
+
+/* Show the overlay when open */
+.all-routes-page.slide-in,
+.all-routes-page.fade-in,
+.all-routes-page.zoom-in {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Hide the overlay when closing */
+.all-routes-page.slide-out,
+.all-routes-page.fade-out,
+.all-routes-page.zoom-out {
+  opacity: 0;
+  visibility: hidden;
+}
+
+/* Content Container */
+.routes-container {
+  max-width: 600px;
+  width: 90%;
+  padding: 2rem;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+  color: white;
+  font-family: 'Roboto', sans-serif;
+}
+
+/* Header Styling */
+.routes-container h1 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 0 0 5px #00e0ff, 0 0 10px #00e0ff;
+}
+
+/* Links */
+.all-routes-page ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.all-routes-page li {
+  margin: 1rem 0;
+  opacity: 0;
+  transform: translateY(-20px);
+  animation: slideIn 0.5s forwards ease-in-out;
+}
+
+.all-routes-page a {
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: #00e0ff;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.all-routes-page a:hover {
+  color: #fff;
+  transform: scale(1.05);
+}
+
+/* Animations */
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideOut {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes fadeOut {
+  from {
+    opacity: 1;
+  }
+  to {
+    opacity: 0;
+  }
+}
+
+@keyframes zoomIn {
+  from {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+  to {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+@keyframes zoomOut {
+  from {
+    opacity: 1;
+    transform: scale(1);
+  }
+  to {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+}
+
+/* Apply Animations */
+.slide-in {
+  animation: slideIn 0.5s ease-in-out;
+}
+
+.slide-out {
+  animation: slideOut 0.5s ease-in-out;
+}
+
+.fade-in {
+  animation: fadeIn 0.5s ease-in-out;
+}
+
+.fade-out {
+  animation: fadeOut 0.5s ease-in-out;
+}
+
+.zoom-in {
+  animation: zoomIn 0.5s ease-in-out;
+}
+
+.zoom-out {
+  animation: zoomOut 0.5s ease-in-out;
+}
