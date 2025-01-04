@@ -1,4 +1,4 @@
-# [npm-all-routes-button] (https://www.npmjs.com/package/npm-ripple-wave-bg)
+# [npm-all-routes-button](https://www.npmjs.com/package/npm-ripple-wave-bg)
 A fully customizable **React button** for navigating between multiple routes with **smooth animations**. It supports **slide, fade, and zoom effects**, allowing developers to create **dynamic page transitions**.
 
 ## 📦 Installation
