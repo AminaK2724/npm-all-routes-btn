@@ -4,7 +4,7 @@ A fully customizable **React button** for navigating between multiple routes wit
 ## 📦 Installation
 Install the package using npm:
 ```sh
-npm install all-routes-button
+npm install npm-all-routes-button
 ```
 
 ## 🛠️ Usage
@@ -14,7 +14,7 @@ Import the `AllRoutesButton` component and pass your **routes, animations, and s
 ```jsx
 import React from 'react'
 import { BrowserRouter as Router } from 'react-router-dom'
-import AllRoutesButton from 'all-routes-button'
+import AllRoutesButton from 'npm-all-routes-button'
 import './custom-button.css' // Custom styles
 
 const routes = [
@@ -146,7 +146,7 @@ If you’d like to contribute:
 
 #### **Clone the repository:**
 ```sh
-git clone https://github.com/your-username/all-routes-button.git
+git clone https://github.com/AminaK2724/npm-all-routes-btn
 ```
 
 #### **Navigate to the project directory:**
@@ -172,7 +172,7 @@ npm run build
 #### **Test the package in a sample React project:**
 ```sh
 cd test-all-routes-button
-npm install ../all-routes-button
+npm install npm-all-routes-button
 npm start
 ```
 
